@@ -6,7 +6,6 @@ from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from sklearn.feature_selection import VarianceThreshold
 from sklearn.decomposition import PCA
 from scipy.stats import pearsonr
-import jieba
 import pandas as pd
 
 
