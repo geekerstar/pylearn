@@ -6,6 +6,7 @@ from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from sklearn.feature_selection import VarianceThreshold
 from sklearn.decomposition import PCA
 from scipy.stats import pearsonr
+import jieba
 import pandas as pd
 
 
@@ -40,7 +41,7 @@ def dict_demo():
     # 2、调用fit_transform()
     data_new = transfer.fit_transform(data)
     print("data_new:\n", data_new.toarray(), type(data_new))
-    print("特征名字：\n", transfer.get_feature_names())
+    print("特征名字：\n", transfer.get_feature_names_out())
 
     return None
 
@@ -57,7 +58,7 @@ def count_demo():
     # 2、调用fit_transform
     data_new = transfer.fit_transform(data)
     print("data_new:\n", data_new.toarray())
-    print("特征名字：\n", transfer.get_feature_names())
+    print("特征名字：\n", transfer.get_feature_names_out())
 
     return None
 
@@ -73,7 +74,7 @@ def count_chinese_demo():
     # 2、调用fit_transform
     data_new = transfer.fit_transform(data)
     print("data_new:\n", data_new.toarray())
-    print("特征名字：\n", transfer.get_feature_names())
+    print("特征名字：\n", transfer.get_feature_names_out())
 
     return None
 
@@ -107,7 +108,7 @@ def count_chinese_demo2():
     # 2、调用fit_transform
     data_final = transfer.fit_transform(data_new)
     print("data_new:\n", data_final.toarray())
-    print("特征名字：\n", transfer.get_feature_names())
+    print("特征名字：\n", transfer.get_feature_names_out())
 
     return None
 
@@ -131,7 +132,7 @@ def tfidf_demo():
     # 2、调用fit_transform
     data_final = transfer.fit_transform(data_new)
     print("data_new:\n", data_final.toarray())
-    print("特征名字：\n", transfer.get_feature_names())
+    print("特征名字：\n", transfer.get_feature_names_out())
 
     return None
 
@@ -216,7 +217,7 @@ def pca_demo():
 
 if __name__ == "__main__":
     # 代码1：sklearn数据集使用
-    datasets_demo()
+    # datasets_demo()
     # 代码2：字典特征抽取
     # dict_demo()
     # 代码3：文本特征抽取：CountVecotrizer
@@ -236,4 +237,4 @@ if __name__ == "__main__":
     # 代码10：低方差特征过滤
     # variance_demo()
     # 代码11：PCA降维
-    # pca_demo()
+    pca_demo()
