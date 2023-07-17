@@ -37,7 +37,7 @@ def datasets_demo():
     x_train, x_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.2, random_state=22)
     print("训练集的特征值：\n", x_train, x_train.shape)
 
-    return None
+    return iris["DESCR"]
 
 
 def dict_demo():
