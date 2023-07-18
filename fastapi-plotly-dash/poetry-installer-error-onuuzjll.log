@@ -1,0 +1,23 @@
+Requirement already satisfied: pip in c:\users\pc\appdata\roaming\pypoetry\venv\lib\site-packages (22.3.1)
+Collecting pip
+  WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000205A58CCAF0>, 'Connection to files.pythonhosted.org timed out. (connect timeout=15)')': /packages/02/65/f15431ddee78562355ccb39097bf9160a1689f2db40dc418754be98806a1/pip-23.2-py3-none-any.whl
+  WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000205A58CCDF0>, 'Connection to files.pythonhosted.org timed out. (connect timeout=15)')': /packages/02/65/f15431ddee78562355ccb39097bf9160a1689f2db40dc418754be98806a1/pip-23.2-py3-none-any.whl
+  WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000205A58CCFA0>, 'Connection to files.pythonhosted.org timed out. (connect timeout=15)')': /packages/02/65/f15431ddee78562355ccb39097bf9160a1689f2db40dc418754be98806a1/pip-23.2-py3-none-any.whl
+  WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000205A58CD150>, 'Connection to files.pythonhosted.org timed out. (connect timeout=15)')': /packages/02/65/f15431ddee78562355ccb39097bf9160a1689f2db40dc418754be98806a1/pip-23.2-py3-none-any.whl
+  WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000205A58CD300>, 'Connection to files.pythonhosted.org timed out. (connect timeout=15)')': /packages/02/65/f15431ddee78562355ccb39097bf9160a1689f2db40dc418754be98806a1/pip-23.2-py3-none-any.whl
+ERROR: Could not install packages due to an OSError: HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Max retries exceeded with url: /packages/02/65/f15431ddee78562355ccb39097bf9160a1689f2db40dc418754be98806a1/pip-23.2-py3-none-any.whl (Caused by ConnectTimeoutError(<pip._vendor.urllib3.connection.HTTPSConnection object at 0x00000205A58CD4B0>, 'Connection to files.pythonhosted.org timed out. (connect timeout=15)'))
+
+
+Traceback:
+
+  File "<stdin>", line 923, in main
+  File "<stdin>", line 560, in run
+  File "<stdin>", line 581, in install
+  File "C:\Program Files\Python310\lib\contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "<stdin>", line 653, in make_env
+  File "<stdin>", line 639, in make_env
+  File "<stdin>", line 352, in make
+  File "<stdin>", line 375, in pip
+  File "<stdin>", line 372, in python
+  File "<stdin>", line 365, in run
